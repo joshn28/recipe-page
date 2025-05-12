@@ -1,0 +1,167 @@
+/** Variable Imports **/
+@import './variables.css';
+
+/**
+  CSS Reset
+  Source: https://www.joshwcomeau.com/css/custom-css-reset/
+**/
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+/* 2. Remove default margin */
+* {
+  margin: 0;
+  font-size: var(--font-paragraph);
+  font-family: var(--fs-base), 'sans-serif';
+}
+body {
+  /* 3. Add accessible line-height */
+  line-height: 1.5;
+  /* 4. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+  background-color: var(--clr-stone100);
+}
+/* 5. Improve media defaults */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+/* 6. Inherit fonts for form controls */
+input, button, textarea, select {
+  font: inherit;
+}
+/* 7. Avoid text overflows */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+/* 8. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+  font-family: var(--fs-accent), 'sans-serif';
+  font-weight: var(--fw-regular);
+  margin: 20px 0;
+}
+/*
+  9. Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate;
+}
+
+/** Your CSS Below **/
+
+#prep-time {
+  margin-top: 25px;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: var(--clr-rose50);
+}
+
+#prep-time h3 {
+  margin-top: 0;
+  font-family: var(--fs-regular), 'sans-serif';
+  font-weight: var(--fw-bold);
+  color: var(--clr-rose800);
+}
+
+main {
+  width: 720px;
+  margin: 100px auto;
+  padding: 35px 30px;
+  border-radius: 20px;
+  background-color: white;
+}
+
+b {
+  font-weight: var(--fw-black);
+}
+
+img {
+  border-radius: 20px;
+}
+
+h1 {
+  font-size: var(--font-header);
+}
+
+h2 {
+  font-size: var(--font-sub-header);
+  color: var(--clr-brown800);
+}
+
+h3 {
+  font-size: 1.1em;
+}
+
+hr {
+  height: 1px;
+  border-width: 0;
+  margin-top: 25px;
+  color: var(--clr-stone150);
+  background-color: var(--clr-stone150);
+}
+
+p, li, th {
+  color: var(--clr-stone600);
+}
+
+ul, ol {
+  padding-left: 10px;
+  list-style-position: outside;
+}
+
+span {
+  position: relative;
+  left: 10px;
+}
+
+li {
+  margin-bottom: 5px;
+  margin-left: 10px;
+}
+
+li::marker {
+  color: var(--clr-brown800);
+}
+
+ul li::marker {
+  font-size: 0.8em;
+}
+
+ol li::marker {
+  font-weight: var(--fw-bold);
+}
+
+table {
+  margin-top: 10px;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td {
+  color: var(--clr-brown800);
+  font-weight: var(--fw-bold);
+}
+
+th, td {
+  border-bottom: 1px solid var(--clr-stone150);
+  padding: 10px 0;
+}
+
+th {
+  text-align: left;
+  padding-left: 20px;
+  font-weight: var(--fw-regular);
+}
+
+table tr:last-child th, table tr:last-child td {
+  border: 0;
+}
+
+/** Attribution CSS **/
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
