@@ -1,10 +1,3 @@
-/**
-  We decided to setup the variable file for you for the Milestone 2 section. You will, however, be expected to do this on your own
-  in the Certification Project, and in Milestone 3 (receiving a style-guide.md and translate this to variables.css) 
-  Note: you can reference these variables with var(<variable name>) in the particular
-  CSS file you import this into (typically style.css). For example, var(--clr-rose50) is using hsl(330, 100%, 98%)
-**/
-
 /** Fonts Imports **/
 @font-face {
   font-family: 'Outfit';
